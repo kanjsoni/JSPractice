@@ -11,9 +11,6 @@
      case 7:
         console.log("Right code");
         break;
-    case 5:
-        console.log("Right code");
-        break;
      case 11:
         console.log("Right code");
         break;
