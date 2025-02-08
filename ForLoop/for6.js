@@ -1,22 +1,9 @@
-let i;
-let m =0;
-let flag =0;
-let n =9;
-m=n/2;
-if(n==0 || n ==1){
-    console.log(n," is not prime number");
+// wap which enter any integer than calculate and prints its factorial.
 
-}else {
-    for(i=2;i<=m;i++){
-        if(n%i==0){
-           console.log(n,"not a prime no.");
-            flag = 1;
-            break ;
-        }
-    }
-    if (flag ==0)
-        {
-            console.log(n, "is prime number");
-        }
-
-    }
+let i= 0;
+let n= prompt("Enter number");
+let fact =1;
+for(i = 1; i<= n; i++){
+    fact = fact*i;
+}
+console.log("Factorial =",fact)
