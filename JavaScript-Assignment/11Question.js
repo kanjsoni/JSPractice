@@ -11,3 +11,21 @@
 // - 4 == '4'
 // - 4 === '4'
 // - Find the length of python and jargon and make a falsy comparison statement.
+
+console.log(-4>3);
+console.log( - 4 >= 3);
+console.log(- 4 < 3);
+console.log(- 4 <= 3 );
+console.log(- 4 == 4);
+console.log(- 4 === 4);
+console.log(- 4 != 4 );
+console.log(- 4 !== 4 );
+console.log(- 4 != '4' );
+console.log(- 4 == '4');
+console.log(- 4 === '4' );
+let word1 ="python";
+let word2 = "jargon";
+console.log(word1 == word2);
+
+
+
