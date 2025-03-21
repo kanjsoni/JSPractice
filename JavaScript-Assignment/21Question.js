@@ -4,3 +4,6 @@
 //     - March, April or May, the season is Spring
 //     - June, July or August, the season is Summer
 //     - If the user input is not month name, return "Input is invalid"
+
+let month = prompt("Enter Month");
+
