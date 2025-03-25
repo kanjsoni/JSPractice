@@ -132,10 +132,66 @@ console.log(keys , " ", value);
 // 10. Write a program that deep clones an object without modifying the original.
 // 11. Create an object representing a bank account with properties like account number, balance, and methods to deposit and withdraw money.
 // 12. Write a program to merge two objects into a single object.
+let car = {
+    start : start(),
+    stop : stop(),
+    speed : speed()
+};
+function start(){
+    is_running = true ;
+    return "Start";
+}
+function stop(){
+    is_running = false;
+    return "Stop";
+}
+function speed(){
+    is_running = true;
+    return 100 ;
+
+}
+console.log(`
+    start ${car.start}
+    speed ${car.speed}
+    `);
 // 13. Write a program that checks if an object is empty.
+let obj = {};
+
+if( Object.keys(obj).length ==  0){
+    console.log("Object is empty");
+} else {
+    console.log("Not empty ");
+
+}
 // 14. Create an object representing a rectangle with properties like width and height and a method to calculate area.
+
+let rectangle ={
+    height : 12,
+    width : 10,
+
+};
+function area(){
+    return rectangle.height*rectangle.width ;
+}
+console.log(`
+    Height ${rectangle.height}
+    Width ${rectangle.width}
+    Area of Rectangle ${area()}
+    `);
 // 15. Write a program that converts an object into an array of key-value pairs.
+
 // 16. Write a function that checks if a given key exists in an object.
+let num ={
+   n1 : 22,
+   n2: 44,
+   n3: 66,
+   n4: 88,
+   n5: 44,
+   n6: 66,
+   n7: 33
+};
+let n = 44 ;
+let exist = console.log(Object.values(num).includes(n));
 // 17. Create an object representing a movie with properties like title, director, and rating. Print its details.
 // 18. Write a program that sorts an array of objects based on a given property.
 // 19. Create an object representing a smartphone with properties like brand, model, and price. Print its details.
