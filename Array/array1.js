@@ -178,8 +178,6 @@ console.log("total Odd no. :", arr9.length - evencount(arr9));
 
 
 // 23. Write a program to find the frequency of each element in an array.
-
-
 // 24. Write a program to insert an element at a specific position in an array.
 // 25. Write a program to delete an element from an array at a given index.
 // 26. Write a program that swaps the first and last elements of an array.
