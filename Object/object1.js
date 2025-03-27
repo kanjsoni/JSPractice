@@ -193,16 +193,91 @@ let num ={
 let n = 44 ;
 let exist = console.log(Object.values(num).includes(n));
 // 17. Create an object representing a movie with properties like title, director, and rating. Print its details.
+let movie = {
+    Title : "SALAAR (PART 1 - CEASEFIRE)",
+    Director : "Sri N. Balram ",
+    Rating :6.6 
+};
+
+console.log(`
+    Movie name :    ${movie.Title}
+    Director :      ${movie.Director}
+    Rating :        ${movie.Rating}
+    `);
 // 18. Write a program that sorts an array of objects based on a given property.
+
 // 19. Create an object representing a smartphone with properties like brand, model, and price. Print its details.
+
+let smartphone = {
+    brand : "MOTOROLA",
+    model : "G62 5G",
+    price : 15500
+};
+console.log(`
+    Smartphone Details !!
+    Brand :  ${smartphone.brand}
+    Model :  ${smartphone.model}
+    Price :  ${smartphone.price}
+    `);
 // 20. Write a program to find the total price of all items in a shopping cart represented as an array of objects.
+
+let cartItems = {
+    highlighter : 20 ,
+    crayons : 100,
+    pencil : 60,
+    waterColor : 400,
+    posterColor : 220,
+    drawingSheet : 250,
+    canvasPaper : 140,
+    pencilColor : 2200,
+    finelinesPen : 775,
+    whiteGelPen : 75,
+    blackSheet : 300,
+    acrylicColor : 1200,
+    acrylicSheet : 300
+};
+let billval = Object.values(cartItems);
+console.log(billval);
+let sum = 0;
+ for (let i = 0 ; i < billval.length ; i++){
+   sum += billval[i]
+ }
+ console.log(" Cart Bill " , sum);
+
+
+    
 // 21. Write a function that takes an object and returns a new object with only the specified keys.
 // 22. Write a program to convert an array of objects into a single object grouped by a specific property.
 // 23. Write a program to update the value of a specific key in an object dynamically.
 // 24. Write a program that finds the property with the highest numeric value in an object.
+let numberval = {
+    a : 2345,
+    b : 6543,
+    c : 3456,
+    d : 7654,
+    e : 3463,
+    f : 7865
+};
+let arr = Object.values(numberval);
+console.log(arr);
+let sortarr = arr.sort(function(a,b) {return a -b} );
+let maxvalue = sortarr[sortarr.length -1];
+console.log("Maximum :", maxvalue);
 // 25. Create an object representing a library with an array of books and methods to add and remove books.
 // 26. Write a program that serializes and deserializes a JSON object.
 // 27. Write a function that compares two objects and checks if they are equal.
 // 28. Write a program to clone an object using Object.assign and spread operator.
+let src = {
+    a : 23,
+    b : 56,
+    c : 98,
+    d : 67
+};
+
+let des = Object.assign( { }, src);
+ console.log(src);
+ console.log(des);
+let des1 = {... des, src};
+console.log(des1);
 // 29. Write a program that finds the most frequently occurring value in an object.
 // 30. Write a program to dynamically generate an object from user input.
